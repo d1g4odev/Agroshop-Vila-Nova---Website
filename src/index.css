@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 49 100% 96%;
+    --foreground: 36 40% 20%;
+
+    --card: 49 100% 97%;
+    --card-foreground: 36 40% 20%;
+
+    --popover: 49 100% 97%;
+    --popover-foreground: 36 40% 20%;
+
+    --primary: 84 60% 27%;
+    --primary-foreground: 49 100% 96%;
+
+    --secondary: 84 75% 44%;
+    --secondary-foreground: 49 100% 96%;
+
+    --muted: 36 30% 90%;
+    --muted-foreground: 36 12% 45%;
+
+    --accent: 36 100% 50%;
+    --accent-foreground: 36 40% 20%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 49 100% 96%;
+
+    --border: 36 30% 80%;
+    --input: 36 30% 80%;
+    --ring: 36 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 36 40% 10%;
+    --foreground: 49 100% 90%;
+
+    --card: 36 40% 15%;
+    --card-foreground: 49 100% 90%;
+
+    --popover: 36 40% 15%;
+    --popover-foreground: 49 100% 90%;
+
+    --primary: 84 60% 27%;
+    --primary-foreground: 49 100% 96%;
+
+    --secondary: 84 75% 44%;
+    --secondary-foreground: 49 100% 96%;
+
+    --muted: 36 20% 25%;
+    --muted-foreground: 36 12% 75%;
+
+    --accent: 36 100% 50%;
+    --accent-foreground: 36 40% 10%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 49 100% 96%;
+
+    --border: 36 30% 30%;
+    --input: 36 30% 30%;
+    --ring: 36 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-nunito;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  .paw-pattern {
+    background-color: #FFFBEB;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23A16207' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .section {
+    @apply py-12 md:py-16 lg:py-20 px-4 md:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-agroshop-green hover:bg-agroshop-green/90 text-white px-6 py-3 rounded-lg font-medium shadow-md transition-all;
+  }
+
+  .btn-secondary {
+    @apply bg-agroshop-light-brown hover:bg-agroshop-brown text-white px-6 py-3 rounded-lg font-medium shadow-md transition-all;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}
