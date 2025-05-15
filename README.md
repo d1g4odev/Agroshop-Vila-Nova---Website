@@ -14,7 +14,7 @@ Este projeto é uma aplicação web desenvolvida com Vite, React, TypeScript, sh
 
 1. **Clone o repositório**
    ```sh
-   git clone <URL_DO_REPOSITÓRIO>
+   git clone https://github.com/d1g4odev/Agroshop-Vila-Nova---Website.git
    cd agroshop-pet-showcase-br-51
    ```
 
